@@ -1,30 +1,139 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="py-md-5 px-md-5 py-3 px-3 mycontainer mx-auto h-100">
+
+    <div class="row h-100">
+      <div class="col-md-3 col-12 mb-md-0 mb-3 h-100">
+        <Sidenav class="h-100" />
+      </div>
+      <div class="col-md-9 col-12 h-100 fakefooter">
+        <div class="row h-100 overflow-auto">
+          <div class="card z-index-0">
+            <nav class="my-3 text-center">
+              <router-link :to="{ name: 'Service' }" class="me-2">
+                <el-button type="primary" :class="[$route.name == 'Service' ? 'buttonselect' : '']" plain> <i
+                    class="fa-regular fa-handshake fa-xl me-2"> </i>
+                  服務項目</el-button>
+              </router-link>
+              <router-link :to="{ name: 'Portfolio' }" class="me-2">
+                <el-button type="primary"
+                  :class="[$route.name == 'Portfolio' || $route.name == 'Intro' ? 'buttonselect' : '']" plain> <i
+                    class="fa-solid fa-palette fa-xl me-2"> </i>
+                  作品集</el-button>
+              </router-link>
+              <router-link :to="{ name: 'Contact' }" class="me-2">
+                <el-button type="primary" :class="[$route.name == 'Contact' ? 'buttonselect' : '']" plain> <i
+                    class="fa-solid fa-id-card fa-xl me-2"> </i>
+                  聯絡我</el-button>
+              </router-link>
+            </nav>
+            <div class="card-body">
+
+              <router-view />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </template>
 
+<script>
+import Sidenav from '@/components/Sidenav';
+
+export default {
+  components: {
+    Sidenav,
+  },
+}
+</script>
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+
+#app,
+.el-button,
+p,
+.card .card-body,
+a,
+input,
+textarea,
+button {
+  font-family: "Noto Sans TC", sans-serif !important;
+}
+
+a {
+  color: initial !important;
+  text-decoration: none !important;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  background-image: url(assets/img/background.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-nav {
-  padding: 30px;
+
+.cardblur {
+  border: 0 solid rgba(0, 0, 0, .125) !important;
+  border-radius: 1rem !important;
+  background-color: #ffffff40 !important;
+  backdrop-filter: blur(15px) !important;
+  box-shadow: 0 20px 27px 0 rgba(0, 0, 0, .05) !important;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.buttonselect {
+  --el-button-text-color: #ffffff !important;
+  --el-button-bg-color: #409eff !important;
+  --el-button-border-color: #409eff !important;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background: rgb(106 122 232 / 46%);
+}
+
+@media (min-width: 768px) {
+  .mycontainer {
+    width: 80%;
+  }
+
+  #app {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .head {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  #app {}
+
+  .mycontainer {
+    width: 100%;
+  }
+
+  .head {
+    width: 55%;
+    border-radius: 50%;
+  }
+
+  .fakefooter {
+    margin-bottom: 30vh;
+  }
 }
 </style>
