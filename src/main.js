@@ -13,6 +13,8 @@ import "bootstrap"
 import "@fortawesome/fontawesome-free/css/all.css";
 import "@fortawesome/fontawesome-free/js/all.js";
 
+import { MotionPlugin } from '@vueuse/motion'
+
 const app = createApp(App);
 
 app.config.globalProperties.$WebsiteData =
@@ -62,4 +64,4 @@ app.use(ElementPlus, {
     locale: { locale },
 });
 
-app.use(router).mount('#app')
+app.use(router).use(MotionPlugin).mount('#app')

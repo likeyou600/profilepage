@@ -13,8 +13,11 @@
             </swiper-slide>
         </swiper>
         <p>{{ this.now.content }}</p>
-        <div v-for="tech in this.now.tech" class="tech">{{ tech }}</div>
-        <el-button type="success" plain @click="openWebsite(now.website)" class="ms-3">前往網站</el-button>
+        <div class="techgroup mb-4">
+            <div v-for="tech in this.now.tech" class="tech">{{ tech }}</div>
+
+        </div>
+        <el-button type="success" plain @click="openWebsite(now.website)" class="ms-0 w-100">前往網站</el-button>
     </div>
 </template>
 
@@ -74,11 +77,17 @@ export default {
     align-items: center;
 }
 
+.techgroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .tech {
     display: inline-block;
     background-color: #abc5ff6e;
     border-radius: 20px;
     padding: 3px;
-    margin: 0 5px 0 5px;
+    margin: 5px 5px 5px 5px;
 }
 </style>

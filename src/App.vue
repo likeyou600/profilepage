@@ -28,7 +28,7 @@
             </nav>
             <div class="card-body">
 
-              <router-view />
+              <router-view v-motion-slide-left />
             </div>
           </div>
         </div>
