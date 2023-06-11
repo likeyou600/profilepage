@@ -20,7 +20,7 @@ const app = createApp(App);
 app.config.globalProperties.$WebsiteData =
     [{
         name: 'PUmountain', title: '靜宜大學器材租借系統', imgsrc: [require('@/assets/portfolio/PUmountain.jpg'), require('@/assets/portfolio/PUmountain2.jpg'), require('@/assets/portfolio/PUmountain3.jpg'), require('@/assets/portfolio/PUmountain4.jpg')], tech: ['Laravel', 'MariaDB', 'BootStarp5']
-        , content: '器材租借系統，並有後臺管理系統。提供用戶輕鬆地預約租借物品。', website: 'https://bakerychu.com/PUmountain/'
+        , content: '器材租借系統，並有後臺管理系統。提供用戶輕鬆地預約租借物品。', website: 'https://pumountain.bakerychu.com/'
     },
     {
         name: 'coding', title: '程式交流網', imgsrc: [require('@/assets/portfolio/coding.jpg'), require('@/assets/portfolio/coding2.jpg'), require('@/assets/portfolio/coding3.jpg'), require('@/assets/portfolio/coding4.jpg')], tech: ['Laravel', 'MariaDB', 'Vue', 'Axios', 'CodeMirror', 'Element-Plus', 'BootStarp5']
@@ -28,7 +28,7 @@ app.config.globalProperties.$WebsiteData =
     },
     {
         name: 'artworld', title: '藝想世界', imgsrc: [require('@/assets/portfolio/artworld.jpg'), require('@/assets/portfolio/artworld2.jpg'), require('@/assets/portfolio/artworld3.jpg'), require('@/assets/portfolio/artworld4.jpg')], tech: ['JS', '政府API', 'BootStarp5']
-        , content: '藝想世界，使用政府提供的API資料，並在網頁上提供搜尋檢視的功能。', website: 'https://bakerychu.com/artworld/home.html'
+        , content: '藝想世界，使用政府提供的API資料，並在網頁上提供搜尋檢視的功能。', website: 'https://artworld.bakerychu.com/'
     },
     {
         name: 'stockworld', title: '股票世界', imgsrc: [require('@/assets/portfolio/stockworld.jpg'), require('@/assets/portfolio/stockworld2.jpg'), require('@/assets/portfolio/stockworld3.jpg'),], tech: ['Laravel', 'MariaDB', 'Vue', 'Axios', 'Element-Plus', 'BootStarp5']
@@ -36,11 +36,11 @@ app.config.globalProperties.$WebsiteData =
     },
     {
         name: 'mtc', title: '公司形象網', imgsrc: [require('@/assets/portfolio/mtc.jpg')], tech: ['BootStarp5']
-        , content: '提供客製化的網頁設計。', website: 'https://bakerychu.com/test/mtc/mtc.html'
+        , content: '提供客製化的網頁設計。', website: 'https://test.bakerychu.com/mtc/mtc.html'
     },
     {
         name: 'japan', title: '日本旅遊網', imgsrc: [require('@/assets/portfolio/japan.jpg'), require('@/assets/portfolio/japan2.jpg')], tech: ['Laravel', 'BootStarp5']
-        , content: '提供客製化的網頁設計。', website: 'https://bakerychu.com/japan/'
+        , content: '提供客製化的網頁設計。', website: 'https://japan.bakerychu.com/'
     }];
 
 app.config.globalProperties.$ContactData =

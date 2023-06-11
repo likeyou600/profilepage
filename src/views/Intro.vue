@@ -1,10 +1,10 @@
 <template>
-    <div class="px-md-3">
+    <div class="px-xl-3">
         <h3 class="mb-3 text-center">【{{ now.title }}】</h3>
         <swiper :style="{
-            '--swiper-navigation-color': '#000',
-            '--swiper-pagination-color': '#000',
-        }" :navigation="true" :spaceBetween="30" :rewind="true" :zoom="true" :pagination="{ clickable: true, }"
+                    '--swiper-navigation-color': '#000',
+                    '--swiper-pagination-color': '#000',
+                }" :navigation="true" :spaceBetween="30" :rewind="true" :zoom="true" :pagination="{ clickable: true, }"
             :modules="modules" class="mySwiper mb-3">
             <swiper-slide v-for="img in now.imgsrc">
                 <div class="swiper-zoom-container">

@@ -1,6 +1,6 @@
 <template>
     <div class="row ">
-        <div v-for="da in data" class="col-md-6 col-12 mb-md-0 mb-5" style="    display: flex;
+        <div v-for="da in data" class="col-xl-6 col-12 mb-xl-0 mb-5" style="    display: flex;
         justify-content: center;">
             <div class="card mb-3" style="width: 18rem; text-align: center; cursor:pointer"
                 @click="openWebsite(da.website)">

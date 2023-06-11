@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <div class="col-md-6 col-12 mb-md-0 mb-3">
+        <div class="col-xl-6 col-12 mb-xl-0 mb-3">
             <p> <i class="fa-solid fa-earth-asia fa-xl me-2"></i><strong>網頁</strong></p>
             <div v-for="da in  data ">
                 <strong>{{ da.emoji }} {{ da.title }}</strong>
@@ -11,7 +11,7 @@
 
             </div>
         </div>
-        <div class="col-md-6 col-12">
+        <div class="col-xl-6 col-12">
             <p> <i class="fa-solid fa-server fa-xl me-2"></i><strong>伺服器</strong></p>
 
             <i class="fa-brands fa-linux me-2"></i>

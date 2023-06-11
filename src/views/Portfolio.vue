@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <div v-for="da in data" class="col-md-4 col-12 mb-md-0 mb-3" style="    display: flex;
+        <div v-for="da in data" class="col-xl-4 col-12 mb-xl-0 mb-3" style="    display: flex;
         justify-content: center;">
             <router-link :to="{ name: 'Intro', params: { name: da.name } }">
                 <div class="card mb-3" style="width: 18rem;">

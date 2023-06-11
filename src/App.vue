@@ -1,11 +1,11 @@
 <template>
-  <div class="py-md-5 px-md-5 py-3 px-3 mycontainer mx-auto h-100">
+  <div class="py-xl-5 px-xl-5 py-3 px-3 mycontainer mx-auto h-100">
 
     <div class="row h-100">
-      <div class="col-md-3 col-12 mb-md-0 mb-3 h-100">
+      <div class="col-xl-3 col-12 mb-xl-0 mb-3 h-100">
         <Sidenav class="h-100" />
       </div>
-      <div class="col-md-9 col-12 h-100 fakefooter">
+      <div class="col-xl-9 col-12 h-100 fakefooter">
         <div class="row h-100 overflow-auto">
           <div class="card z-index-0">
             <nav class="my-3 text-center">
@@ -103,7 +103,7 @@ a {
   background: rgb(106 122 232 / 46%);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .mycontainer {
     width: 80%;
   }
@@ -120,7 +120,7 @@ a {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   #app {}
 
   .mycontainer {
