@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 
 import ElementPlus from "element-plus";
-import locale from "element-plus/lib/locale/lang/zh-tw";
+import zhTw from "element-plus/es/locale/lang/zh-tw";
 import "element-plus/dist/index.css";
 import "element-plus/theme-chalk/display.css";
 
@@ -45,7 +45,7 @@ app.config.globalProperties.$WebsiteData =
 
 app.config.globalProperties.$ContactData =
     [{ name: 'Line', title: 'Line : bakery678', website: 'https://line.me/ti/p/X0XBiAnjFw' },
-    { name: 'Gmail', title: 'Gmail : likeyou600@gmail.com', website: 'mailto:likeyou600@gmail.com' },
+    { name: 'Gmail', title: 'Gmail : bakery3uu3@gmail.com', website: 'mailto:bakery3uu3@gmail.com' },
     { name: 'Github', title: 'Github : likeyou600', website: 'https://github.com/likeyou600' },
     { name: 'Phone', title: '手機 : 0981940611', website: 'tel:0981940611' },];
 
@@ -61,7 +61,7 @@ app.config.globalProperties.$ServiceServerData =
     { title: 'Linux Docker 部屬', content: '我們替您的Linux 主機 或 虛擬機 或 windows Docker部署 web server，並使用 Apache 作為 Web 伺服器，以及 MariaDB作為資料庫管理系統。並將網站前後端部署上線。' };
 
 app.use(ElementPlus, {
-    locale: { locale },
+    locale: zhTw,
 });
 
 app.use(router).use(MotionPlugin).mount('#app')

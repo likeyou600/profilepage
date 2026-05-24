@@ -29,7 +29,7 @@ import "swiper/css/zoom";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import { Zoom, Navigation, Pagination } from "swiper";
+import { Zoom, Navigation, Pagination } from "swiper/modules";
 
 export default {
     components: {
